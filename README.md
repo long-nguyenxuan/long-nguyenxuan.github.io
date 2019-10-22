@@ -1,94 +1,120 @@
-# hello: a minimalist template for personal websites on Github Pages
+> March, 2016: If you're on an old version of Jekyll Now and run into a) build warnings or b) syntax highlighting issues caused by [Jekyll 3 and GitHub Pages updates](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), just :sparkles:[update your _config.yml](https://github.com/barryclark/jekyll-now/pull/445/files):sparkles: and you'll be set!
 
-## Why **hello**?  
-  
-**hello** has a simple goal: to make GitHub Pages accessible to everyone.  
-  
+# Jekyll Now
 
-**hello** is a minimalist template that lets you design a beautiful website or portfolio on GitHub Pages - without installing a Ruby
-development environment, learning to use Jekyll, **or even typing a single line of code**. It's ideal for GitHubbers
-who want to start building their personal website on [GitHub Pages](https://pages.github.com/), but maybe aren't so familiar with web development.
-  
+**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
-The default layout of **hello** is a streamlined single page with three major customizable sections: a required "about" section, an optional portfolio, and an optional CTA. Using [Liquid](https://shopify.github.io/liquid/) variables declared by in the config and index files, **hello** offers an easy-to-use design where all customizations necessary for a basic personal website can be written in [Markdown](https://www.markdownguide.org/basic-syntax/). **hello** is adapted from [Twenty](https://html5up.net/twenty), a responsive, mobile-friendly theme by HTML5 Up.  
+**Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
 
+- You don't need to touch the command line
+- You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
+- You don't need to install runtime dependencies like markdown processors, Pygments, etc
+- If you're on Windows, this will make setting up Jekyll a lot easier
+- It's easy to try out, you can just delete your forked repository if you don't like it
 
-Demo **hello** [here](https://saragong.github.io/hello/).
+In a few minutes you'll be set up with a minimal, responsive blog like the one below giving you more time to spend on writing epic blog posts!
 
-## Getting started
-To use **hello**, follow these steps:
+![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
 
-1. Click the green "Use this template" button on the main page of the **hello** repository.
+## Quick Start
 
-2. Follow the instructions to create a new repository from **hello**, setting the repository name as "*your-username*.github.io".
+### Step 1) Fork Jekyll Now to your User Repository
 
-3. Under **Settings** for this new repo, navigate to the **GitHub Pages** section and ensure that GitHub Pages is enabled for the `master` branch.
+Fork this repo, then rename the repository to yourgithubusername.github.io.
 
-4. On the command line, clone this new repository to your local directory.
+Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
 
-```
-$ git clone https://github.com/*your-username*/*your-username*.github.io.git
-```
+![Step 1](/images/step1.gif "Step 1")
 
-5. Navigate into the project folder, open the `_config.yml` and `index.md` files in your preferred text editor, and start customizing your website!
+### Step 2) Customize and view your site
 
-6. When you're ready to see your work, commit your changes to the remote repo.
-```
-$ git add .
-$ git commit -m "first commit"
-$ git push origin master
-```
+Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
 
-7. In just a few moments, Github will build your shiny new website at "https://*your-username*.github.io/".
+Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon
 
-## Usage
+> There are 3 different ways that you can make changes to your blog's files:
 
-### The following variables are required:
+> 1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
+> 2. Use a third party GitHub content editor, like [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
+> 3. Clone down your repository and make updates locally, then push them to your GitHub repository.
 
-`_config.yml`:
-* `title`
-* `author`
-* `description`
-* `baseurl`  
+![_config.yml](/images/config.png "_config.yml")
 
-`index.md`:
-* `banner_title`
-* `banner_subtitle`
-* `background_image`
+### Step 3) Publish your first blog post
 
-### The following variables are optional:
-`index.md`:
-* `favicon`
-* `facebook_username`
-* `twitter_username`
-* `github_username`
-* `linkedin`
-* `google_analytics` (your Google Analytics Tracking ID)
+Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
 
-By declaring these variables, you can include a button that links to an external website or to media.
-* `about_button` (the link)
-* `about_button_label` (the label on the button)
+![First Post](/images/first-post.png "First Post")
 
-By declaring these variables, you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. In addition, you must 1) create an HTML file in the_includes folder for each project with the text you'd like to display, and 2) create a YAML file in the _data folder describing how each project should be shown and categorized. See `/includes/example.html` and `/_data/work.yml` for examples.
-* `portfolio` (the heading for your portfolio and title of your YAML file)
-* `portfolio_description` (a description to be displayed below the heading and above the content)
+> You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
 
-By declaring these variables, you can include a CTA section.
-* `cta` (the heading for your CTA section)
-* `cta_description` (a description to be displayed below the heading and above the content)
-* `cta_button` (a link to an external website or to media)
-* `cta_button_label` (the label on the button)
+## Local Development
 
-## Additional Information
-Created by [Sara Gong](https://saragong.github.io/), University of Southern California.  
+1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
+2. Clone down your fork `git clone https://github.com/yourusername/yourusername.github.io.git`
+3. Serve the site and watch for markup/sass changes `jekyll serve`
+4. View your website at http://127.0.0.1:4000/
+5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
-This work is licensed under the MIT License, which lets you use, modify, and publish adaptations of this template free of charge and without restriction, as long as you preserve all copyright notices and licenses.  
+## Moar!
 
-This original theme, of which this is an adaptation, is licensed by HTML5 Up under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).  
+I've created a more detailed walkthrough, [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) over at the Smashing Magazine website. Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
 
-The images from the demo website are from [Unsplash](https://unsplash.com/).
+It covers:
 
-## Theme Information
-Twenty by HTML5 UP  
-html5up.net | @n33co  
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+- A more detailed walkthrough of setting up your Jekyll blog
+- Common issues that you might encounter while using Jekyll
+- Importing from Wordpress, using your own domain name, and blogging in your favorite editor
+- Theming in Jekyll, with Liquid templating examples
+- A quick look at Jekyll 2.0’s new features, including Sass/Coffeescript support and Collections
+
+## Jekyll Now Features
+
+✓ Command-line free _fork-first workflow_, using GitHub.com to create, customize and post to your blog  
+✓ Fully responsive and mobile optimized base theme (**[Theme Demo](http://jekyllnow.com)**)  
+✓ Sass/Coffeescript support using Jekyll 2.0  
+✓ Free hosting on your GitHub Pages user site  
+✓ Markdown blogging  
+✓ Syntax highlighting  
+✓ Disqus commenting  
+✓ Google Analytics integration  
+✓ SVG social icons for your footer  
+✓ 3 http requests, including your avatar  
+
+✘ No installing dependencies
+✘ No need to set up local development  
+✘ No configuring plugins  
+✘ No need to spend time on theming  
+✘ More time to code other things ... wait ✓!  
+
+## Questions?
+
+[Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
+
+## Other forkable themes
+
+You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here are some of my favorites:
+
+- [Hyde](https://github.com/poole/hyde) by MDO
+- [Lanyon](https://github.com/poole/lanyon) by MDO
+- [mojombo.github.io](https://github.com/mojombo/mojombo.github.io) by Tom Preston-Werner
+- [Left](https://github.com/holman/left) by Zach Holman
+- [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) by Michael Rose
+- [Skinny Bones](https://github.com/mmistakes/skinny-bones-jekyll) by Michael Rose
+
+## Credits
+
+- [Jekyll](https://github.com/jekyll/jekyll) - Thanks to its creators, contributors and maintainers.
+- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel. They're beautiful.
+- [Solarized Light Pygments](https://gist.github.com/edwardhotchkiss/2005058) - Thanks, Edward.
+- [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml in this repository.
+- [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy), [Luke Patton](https://github.com/lkpttn) - Thanks for the design/code reviews.
+- [Bart Kiers](https://github.com/bkiers), [Florian Simon](https://github.com/vermluh), [Henry Stanley](https://github.com/henryaj), [Hun Jae Lee](https://github.com/hunjaelee), [Javier Cejudo](https://github.com/javiercejudo), [Peter Etelej](https://github.com/etelej), [Ben Abbott](https://github.com/jaminscript), [Ray Nicholus](https://github.com/rnicholus), [Erin Grand](https://github.com/eringrand), [Léo Colombaro](https://github.com/LeoColomb), [Dean Attali](https://github.com/daattali), [Clayton Errington](https://github.com/cjerrington), [Colton Fitzgerald](https://github.com/coltonfitzgerald), [Trace Mayer](https://github.com/sunnankar) - Thanks for your [fantastic contributions](https://github.com/barryclark/jekyll-now/commits/master) to the project!
+
+## Contributing
+
+Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
+
+You can start by [opening an issue](https://github.com/barryclark/jekyll-now/issues/new) describing the problem that you're looking to resolve and we'll go from there.
+
+I want to keep Jekyll Now as minimal as possible. Every line of code should be one that's useful to 90% of the people using it. Please bear that in mind when submitting feature requests. If it's not something that most people will use, it probably won't get merged. :guardsman:
