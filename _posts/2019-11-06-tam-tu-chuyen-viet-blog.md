@@ -34,6 +34,7 @@ blogger_orig_url: https://longtth.blogspot.com/2011/01/tuy-chinh-firefox-khong-o
 ---
 ```
 4. Rồi hết chuyện "blog engine" lại đến chuyện editor, như cái bài này thì viết bằng stackedit, 1 cái markdown editor cực mạnh, cơ mà web-based :D trong khi việc chuyển blogger sang chỗ jekyll là để quản lý tất cả đống post này bằng `local file` rồi đồng bộ bằng github này kia. 
+5. ok5, bạn stackedit thực ra chỉ cho mình viết và save markdown trên máy bạn ấy và cái workspace (Google Drive v.v.) chứ khi publish thì bạn ấy sẽ generate nó thành html và đẩy qua. Hình như có thể set workspace vào trong `github/user/repo/_posts` được nhưng mà nãy giờ cứ xà quần nên quất luôn
 
 
 > Written with [StackEdit](https://stackedit.io/).
