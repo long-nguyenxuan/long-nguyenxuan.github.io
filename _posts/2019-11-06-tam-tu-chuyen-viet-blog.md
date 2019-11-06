@@ -30,17 +30,17 @@ Note lại đây coi như 1 đoạn thú vị hôm nay:</p>
 <ol start="3">
 <li>mở cmd ở folder có chứa cái file <code>import.rb</code> đấy chạy lệnh <code>ruby import.rb</code> vậy là ruby sẽ gọi cái <code>gem</code> <code>jekyll-import</code> kia lên, truyền tham số là file xml của ta, để kéo hết đống bài viết trên blogger về, ở định dạng html, kèm theo cái header của jekyll (chả biết phải không, đoán thế :D )</li>
 </ol>
-<pre><code>---
-layout: post
-title: Tùy chỉnh Firefox không đóng cửa sổ khi close tab cuối
-date: '2011-01-08T00:04:00.000+07:00'
-author: LongNX
-tags:
-- Tips
-modified_time: '2012-10-07T00:41:16.815+07:00'
-blogger_id: tag:blogger.com,1999:blog-7002884210363940340.post-822816716037176474
-blogger_orig_url: https://longtth.blogspot.com/2011/01/tuy-chinh-firefox-khong-ong-cua-so-khi.html
----
+<pre class=" language-yaml"><code class="prism  language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> post
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Tùy chỉnh Firefox không đóng cửa sổ khi close tab cuối
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token string">'2011-01-08T00:04:00.000+07:00'</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> LongNX
+<span class="token key atrule">tags</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> Tips
+<span class="token key atrule">modified_time</span><span class="token punctuation">:</span> <span class="token string">'2012-10-07T00:41:16.815+07:00'</span>
+<span class="token key atrule">blogger_id</span><span class="token punctuation">:</span> tag<span class="token punctuation">:</span>blogger.com<span class="token punctuation">,</span>1999<span class="token punctuation">:</span>blog<span class="token punctuation">-</span>7002884210363940340.post<span class="token punctuation">-</span><span class="token number">822816716037176474</span>
+<span class="token key atrule">blogger_orig_url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//longtth.blogspot.com/2011/01/tuy<span class="token punctuation">-</span>chinh<span class="token punctuation">-</span>firefox<span class="token punctuation">-</span>khong<span class="token punctuation">-</span>ong<span class="token punctuation">-</span>cua<span class="token punctuation">-</span>so<span class="token punctuation">-</span>khi.html
+<span class="token punctuation">---</span>
 </code></pre>
 <ol start="4">
 <li>Rồi hết chuyện “blog engine” lại đến chuyện editor, như cái bài này thì viết bằng stackedit, 1 cái markdown editor cực mạnh, cơ mà web-based :D trong khi việc chuyển blogger sang chỗ jekyll là để quản lý tất cả đống post này bằng <code>local file</code> rồi đồng bộ bằng github này kia.</li>
