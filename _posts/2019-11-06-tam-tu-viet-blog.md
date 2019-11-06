@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Tâm tư Viết blog
+title: Tâm tư chuyện Viết blog
 date: '2019-11-06T00:04:00.000+07:00'
 author: LongNX
 tags:
 - vụn
 ---
-
-# Tâm tư vv Viết blog
 Nhiều lúc ngồi nhìn mấy cái blog của người ta lại thèm viết blog của mình, cơ mà bắt tay vào viết lại quá tập trung vào cái "blog engine" thay vì "blog content". 
 Hồi bữa thấy giới thiệu cái Github pages, thấy hay hay, xong rồi mày mò qua `jeklly` với lại `hexo` cũng thú vị, hôm nay mày mò chỗ thằng `jekyll-import`, wow, export cái file, nhấn enter một phát là nó kéo hết được bài viết từ bên chỗ blogspot về, lướt lại mấy dòng thời ngây ngô cũng vui :D. 
 Note lại đây coi như 1 đoạn thú vị hôm nay: 
@@ -38,5 +36,5 @@ blogger_orig_url: https://longtth.blogspot.com/2011/01/tuy-chinh-firefox-khong-o
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0Njg3NTE5MCw2NTIzODEyOTVdfQ==
+eyJoaXN0b3J5IjpbNzI4MjkwNDc2LDY1MjM4MTI5NV19
 -->
