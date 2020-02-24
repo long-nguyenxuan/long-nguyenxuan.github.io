@@ -7,7 +7,7 @@ tags:
 - Software Engineering
 ---
 
-## Git pulll un-related histories
+## Git pull un-related histories
 
 TLDR:
 làm theo cái guide "chuẩn" mà ăn cái error msg `The current branch master has no upstream branch.` vào mặt thì pull bằng lệnh này
